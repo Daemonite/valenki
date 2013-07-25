@@ -1,0 +1,101 @@
+/*
+ * BxSlider v4.0 - Fully loaded, responsive content slider
+ * http://bxslider.com
+ *
+ * Written by: Steven Wanderski, 2012
+ * http://stevenwanderski.com
+ * (while drinking Belgian ales and listening to jazz)
+ *
+ * CEO and founder of bxCreative, LTD
+ * http://bxcreative.com
+ */
+.bxslider {
+  margin:0;
+}
+.bxslider li {
+	position:relative;
+}
+.bxslider li > img {
+  width:100%;
+}
+.bx-wrapper {
+  height:100%;
+  margin:0;
+  padding:0;
+  position:relative;
+  *zoom:1;
+}
+.bx-wrapper img {
+  display:block;
+}
+.bx-wrapper .bx-caption {
+  background-color:rgba(0,0,0,0.5);
+  background:url(images/bx-caption.png) 0 0 repeat\9;
+  color:#bdc3c7;
+  padding:15px 0;
+  position:absolute;
+    bottom:0;
+    left:0;
+  width:100%;
+  -webkit-transition:background-color 0.3s linear;
+     -moz-transition:background-color 0.3s linear;
+       -o-transition:background-color 0.3s linear;
+          transition:background-color 0.3s linear;
+}
+.bx-wrapper .bx-caption:hover {
+  background-color:rgba(0,0,0,0.8);
+}
+.bx-wrapper .bx-caption a {
+	color:#ecf0f1;
+  font-weight:900;
+}
+.bx-wrapper .bx-caption p {
+  margin:0;
+  padding:0 20px;
+}
+.bx-wrapper .bx-caption p + p {
+  margin-top:5px;
+}
+.bx-wrapper .bx-controls-direction a {
+  margin-top:-13px;
+  height:25px;
+  outline:0;
+  position:absolute;
+    top:50%;
+  text-indent:-99999px;
+  width:25px;
+  z-index:101;
+}
+.bx-wrapper .bx-controls-direction a.disabled {
+  display:none;
+}
+.bx-wrapper .bx-next {
+  background-image:url(images/buttons.png);
+  background-position:-35px -124px;
+  background-repeat:no-repeat;
+  right:10px;
+}
+.bx-wrapper .bx-next:hover {
+  background-position:-35px -95px;
+}
+.bx-wrapper .bx-prev {
+  background-image:url(images/buttons.png);
+  background-position:-5px -124px;
+  background-repeat:no-repeat;
+  left:10px;
+}
+.bx-wrapper .bx-prev:hover {
+  background-position:-5px -95px;
+}
+.bx-wrapper .bx-viewport {
+  background-color:#ffffff;
+}
+@media (max-width:480px) {
+  .bx-wrapper .bx-caption {
+    background-color:#000000;
+    position:static;
+  }
+  .bx-wrapper .bx-controls-direction a {
+    top:23px;
+  }
+}

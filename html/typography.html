@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FarCry</title>
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.js"></script>
+  <!--[if lte IE 8]>
+    <link rel="stylesheet" type="text/css" href="css/ie.css">
+    <script type="text/javascript" src="js/ie.js"></script>
+  <![endif]-->
+</head>
+<body>
+  <a class="collapsed navbar-toggle" data-target="#main-nav" data-toggle="collapse">Menu</a>
+  <div class="collapse navbar" id="main-nav">
+    <ul class="clearfix">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="start.html">Getting Started</a></li>
+      <li class="active"><a href="typography.html">Typography</a></li>
+      <li><a href="news.html">News</a></li>
+    </ul><!-- /.clearfix -->
+  </div><!-- /.navbar #main-nav -->
+  <div class="hero">
+    <form action="search.html" class="navbar-search">
+      <div class="collapse" id="navbar-search">
+        <input type="search">
+        <button class="navbar-search-btn"></button>
+      </div><!-- /#navbar-search -->
+      <a class="collapsed navbar-search-toggle" data-target="#navbar-search" data-toggle="collapse"></a>
+    </form><!-- /.navbar-search -->
+    <div class="hero-content">
+      <h1>Typography</h1>
+    </div><!-- /.hero-content -->
+  </div><!-- /.hero -->
+  <div class="content">
+    <div class="navbar">
+      <ul class="clearfix">
+        <li><a href="#headings">Headings</a></li>
+        <li><a href="#body">Body Copy</a></li>
+        <li><a href="#blockquotes">Blockquotes</a></li>
+        <li><a href="#abbreviations">Abbreviations</a></li>
+        <li><a href="#address">Address</a></li>
+        <li><a href="#lists">Lists</a></li>
+        <li><a href="#tables">Tables</a></li>
+      </ul><!-- /.clearfix -->
+    </div><!-- /.navbar -->
+    <div class="article" id="headings">
+      <h2 class="article-heading">Headings</h2>
+      <div class="article-content">
+        <p>Pre-defined HTML headings from <code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code>:</p>
+        <div class="doc-example">
+          <h1>h1: Heading 1</h1>
+          <h2>h2: Heading 2</h2>
+          <h3 style="padding-top:0;">h3: Heading 3</h3>
+          <h4 style="padding-top:0;">h4: Heading 4</h4>
+          <h5>h5: Heading 5</h5>
+          <h6>h6: Heading 6</h6>
+        </div><!-- /.doc-example -->
+      </div><!-- /.article-content -->
+    </div><!-- /.article #headings -->
+    <div class="article" id="body">
+      <h2 class="article-heading">Body Copy</h2>
+      <div class="article-content">
+        <h3>Paragraphs</h3>
+        <p>Global default <code>font-size</code> is 16px, with a <code>line-height</code> of 22px. This is applied to the <code>&lt;body&gt;</code> and all paragraphs. In addition, <code>&lt;p&gt;</code> (paragraphs) receive a bottom margin of 10px.</p>
+        <div class="doc-example">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div><!-- /.doc-example -->
+        <p>A <code>.lead</code> paragraph that stands out:</p>
+        <div class="doc-example">
+          <p class="lead">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div><!-- /.doc-example -->
+        <h3>Emphasis</h3>
+        <p>Make use of tags <code>&lt;strong&gt;</code>, <code>&lt;small&gt;</code>, and <code>&lt;em&gt;</code> for additional styles. <code>&lt;strong&gt;</code> formemphasising a snippet of text with a heavier font-weight. <code>&lt;small&gt;</code> for de-emphasising inline or blocks of text. <code>&lt;em&gt;</code> for emphasising a snippet of text with italics.</p>
+        <div class="doc-example">
+          <p>This line of text contains <strong>strong text</strong>, and <small style="color:inherit;display:initial;padding-top:0;">small text</small>, and <em>italicised text</em>.</p>
+        </div><!-- /.doc-example -->
+      </div><!-- /.article-content -->
+    </div><!-- /.article #body -->
+    <div class="article" id="blockquotes">
+      <h2 class="article-heading">Blockquotes</h2>
+      <div class="article-content">
+        <p>Use <code>&lt;blockquote&gt;</code> for quoting blocks of content from another source within the document:</p>
+        <div class="doc-example">
+          <blockquote>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            <small>Author and Date</small>
+          </blockquote>
+        </div><!-- /.doc-example -->
+      </div><!-- /.article-content -->
+    </div><!-- /.article #blockquotes -->
+    <div class="article" id="abbreviations">
+      <h2 class="article-heading">Abbreviations</h2>
+      <div class="article-content">
+        <p>Stylized implementation of HTML's <code>&lt;abbr&gt;</code> element for abbreviations and acronyms to show the expanded version on hover. Abbreviations with a <code>&lt;title&gt;</code> attribute have a light dotted bottom border and a help cursor on hover, providing additional context on hover.</p>
+        <div class="doc-example">
+          <p>An abbreviation of Hyper Text Markup Language is <abbr title="Hyper Text Markup Language">HTML</abbr>.</p>
+        </div><!-- /.doc-example -->
+      </div><!-- /.article-content -->
+    </div><!-- /.article #abbreviations -->
+    <div class="article" id="address">
+      <h2 class="article-heading">Address</h2>
+      <div class="article-content">
+        <p>Use <code>&lt;address&gt;</code> to present contact information:</p>
+        <div class="doc-example">
+          <address>
+            <strong>Daemon</strong><br>
+            404/46A Macleay Street<br>
+            Potts Point, NSW 2011<br>
+            <abbr title="Phone">P:</abbr> +61 2 8090 9394<br>
+            <abbr title="Email">E:</abbr> info@daemon.com.au
+          </address>
+        </div><!-- /.doc-example -->
+      </div><!-- /.article-content -->
+    </div><!-- /.article #address -->
+    <div class="article" id="lists">
+      <h2 class="article-heading">Lists</h2>
+      <div class="article-content">
+        <h3>Unordered</h3>
+        <p>Unordered list <code>&lt;ul&gt;</code>:</p>
+        <div class="doc-example">
+          <ul>
+            <li>Excepteur sint occaecat cupidatat non proident</li>
+            <li>Sunt in culpa qui officia deserunt</li>
+            <li>
+              Mollit anim id est laborum lLorem ipsum dolor sit
+              <ul>
+                <li>Excepteur sint occaecat cupidatat non proident</li>
+                <li>Sunt in culpa qui officia deserunt</li>
+                <li>Mollit anim id est laborum lLorem ipsum dolor sit</li>
+              </ul>
+            </li>
+            <li>Amet consectetur adipisicing elit, sed do eiusmod tempor</li>
+            <li>Incididunt ut labore et dolore magna aliqua</li>
+          </ul>
+        </div><!-- /.doc-example -->
+        <h3>Ordered</h3>
+        <p>Ordered list <code>&lt;ol&gt;</code>:</p>
+        <div class="doc-example">
+          <ol>
+            <li>Excepteur sint occaecat cupidatat non proident</li>
+            <li>Sunt in culpa qui officia deserunt</li>
+            <li>Mollit anim id est laborum lLorem ipsum dolor sit</li>
+            <li>Amet consectetur adipisicing elit, sed do eiusmod tempor</li>
+            <li>Incididunt ut labore et dolore magna aliqua</li>
+          </ol>
+        </div><!-- /.doc-example -->
+        <h3>Unstyled</h3>
+        <p>A list with <code>list-style</code> set to none:</p>
+        <div class="doc-example">
+          <ul class="unstyled">
+            <li>Excepteur sint occaecat cupidatat non proident</li>
+            <li>Sunt in culpa qui officia deserunt</li>
+            <li>Mollit anim id est laborum lLorem ipsum dolor sit</li>
+            <li>Amet consectetur adipisicing elit, sed do eiusmod tempor</li>
+            <li>Incididunt ut labore et dolore magna aliqua</li>
+          </ul><!-- /.unstyled -->
+        </div><!-- /.doc-example -->
+        <h3>Inline</h3>
+        <p>Place all list items on a single line with <code>inline-block</code> and some light padding.</p>
+        <div class="doc-example">
+          <ul class="inline">
+            <li>Excepteur</li>
+            <li>Sunt</li>
+            <li>Mollit</li>
+            <li>Amet</li>
+            <li>Incididunt</li>
+          </ul><!-- /.inline -->
+        </div><!-- /.doc-example -->
+        <H3>Description</H3>
+        <p>A list of terms with their associated descriptions. <code>&lt;dl&gt;</code></p>
+        <div class="doc-example">
+          <dl>
+            <dt>Description lists</dt>
+            <dd>A description list is perfect for defining terms.</dd>
+            <dt>Euismod</dt>
+            <dd>Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.</dd>
+            <dd>Donec id elit non mi porta gravida at eget metus.</dd>
+            <dt>Malesuada porta</dt>
+            <dd>Etiam porta sem malesuada magna mollis euismod.</dd>
+          </dl>
+        </div><!-- /.doc-example -->
+      </div><!-- /.article-content -->
+    </div><!-- /.article #lists -->
+    <div class="article" id="tables">
+      <h2 class="article-heading">Tables</h2>
+      <div class="article-content">
+        <p>A default table <code>.table</code>:</p>
+        <div class="doc-example">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>1</th>
+                <th>Second Column</th>
+                <th>Third</th>
+                <th>Final</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>A Value</td>
+                <td>Some more longer values</td>
+                <td>1,000</td>
+                <td>NSW</td>
+              </tr>
+              <tr>
+                <td>Another</td>
+                <td>Lorem ipsum dolor sit amet</td>
+                <td>3,081</td>
+                <td>ACT</td>
+              </tr>
+              <tr>
+                <td>Repeated</td>
+                <td>Sed do eiusmod tempor incididunt ut labore</td>
+                <td>910</td>
+                <td>QLD</td>
+              </tr>
+              <tr>
+                <td>Again</td>
+                <td>Et dolore magna aliqua</td>
+                <td>80,310</td>
+                <td>VIC</td>
+              </tr>
+            </tbody>
+          </table><!-- /.table -->
+        </div><!-- /.doc-example -->
+        <p><code>.table-striped</code> adds zebra-striping to any table row within the <code>&lt;tbody&gt;</code> via the <code>:nth-child</code> CSS selector (not available in IE7-8).</p>
+        <p><code>.table-hover</code> enables a hover state on table rows within a <code>&lt;tbody&gt;</code>.</p>
+        <div class="doc-example">
+          <table class="table table-hover table-striped">
+            <thead>
+              <tr>
+                <th>1</th>
+                <th>Second Column</th>
+                <th>Third</th>
+                <th>Final</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>A Value</td>
+                <td>Some more longer values</td>
+                <td>1,000</td>
+                <td>NSW</td>
+              </tr>
+              <tr>
+                <td>Another</td>
+                <td>Lorem ipsum dolor sit amet</td>
+                <td>3,081</td>
+                <td>ACT</td>
+              </tr>
+              <tr>
+                <td>Repeated</td>
+                <td>Sed do eiusmod tempor incididunt ut labore</td>
+                <td>910</td>
+                <td>QLD</td>
+              </tr>
+              <tr>
+                <td>Again</td>
+                <td>Et dolore magna aliqua</td>
+                <td>80,310</td>
+                <td>VIC</td>
+              </tr>
+            </tbody>
+          </table><!-- /.table .table-hover .table-striped -->
+        </div><!-- /.doc-example -->
+      </div><!-- /.article-content -->
+    </div><!-- /.article #tables -->
+  </div><!-- /.content -->
+  <div class="hero">
+    <div class="hero-content">
+      <p><small>FarCry Core was lovingly crafted by the Daemonites and the FarCry Community.</small></p>
+      <p><small>Copyright Daemon 2003-2012. FarCry Core is dual licensed under the GPL and Commercial Licenses.</small></p>
+      <p><small>Powered by&nbsp;<a href="http://www.farcrycore.org/" target="_blank">FarCry Core</a></small></p>
+    </div><!-- /.hero-content -->
+  </div><!-- /.hero -->
+</body>
+</html>

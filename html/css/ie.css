@@ -1,0 +1,116 @@
+body {
+  min-width:480px;
+}
+/*** article ***/
+.article ~ .article {
+  *border-top:1px solid #e5e5e5;
+}
+.article-content {
+  *margin-bottom:0;
+}
+.article-heading small {
+  *display:block;
+  *padding-top:20px;
+}
+/*** bg ***/
+#bg {
+  filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.[[pix:theme|login-bg]]',sizingMethod='scale');
+  -ms-filter:"progid:DXImageTransform.Microsoft.AlphaImageLoader(src='[[pix:theme|login-bg]]',sizingMethod='scale')";
+}
+#bg-over {
+  background:#000000;
+  filter:alpha(opacity=30);
+}
+/*** content ***/
+.content .navbar {
+  background:url(images/hero.png) 0 0 repeat;
+}
+/*** hero ***/
+.hero {
+  background:url(images/hero.png) 0 0 repeat;
+}
+.hero > *.last-child {
+  margin-bottom:0;
+}
+/*** navbar ***/
+.navbar.collapse {
+  height:auto !important;
+  overflow:visible !important;
+}
+.navbar > ul > li {
+  *display:inline;
+  *zoom:1;
+}
+.navbar > ul > li > a {
+  *display:inline;
+  *padding-right:8px;
+  *zoom:1;
+}
+/*** navbar search ***/
+.navbar-search-toggle {
+  background-color:#000000;
+  border:1px solid #333333;
+  border-top:none;
+}
+/*** 1200px ***/
+.full-width .content {
+  width:60%;
+}
+.full-width .hero {
+  width:60%;
+}
+.full-width .navbar-search {
+  right:20%;
+}
+/*** 767px ***/
+.tablet-width .article {
+  padding:30px 30px 0;
+}
+.tablet-width .article-content,
+.tablet-width .article-heading,
+.tablet-width .article-img {
+  width:100%;
+}
+.tablet-width blockquote {
+  padding:30px;
+}
+.tablet-width .content {
+  padding:0;
+  width:100%;
+}
+.tablet-width .content + .hero {
+  margin-bottom:0;
+}
+.tablet-width .content > .row {
+  width:100%;
+}
+.tablet-width .hero {
+  position:relative;
+  width:100%;
+}
+.tablet-width .hero-content {
+  padding:30px;
+}
+.tablet-width .navbar {
+  padding:0;
+  width:100%;
+}
+.tablet-width .navbar-search {
+  top:0;
+  right:30px;
+  left:0;
+}
+.tablet-width .navbar-search input[type="search"],
+.tablet-width .navbar-search input [type="text"] {
+  width:100%;
+}
+.tablet-width .navbar-search-toggle {
+  border-bottom:1px solid #333333;
+  height:29px;
+  position:absolute;
+    top:0;
+    right:-30px;
+}
+.tablet-width .pager {
+  margin-bottom:30px;
+}

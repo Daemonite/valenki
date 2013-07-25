@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FarCry</title>
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <link rel="stylesheet" type="text/css" href="css/plugin.css">
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.js"></script>
+  <script type="text/javascript" src="js/plugin.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $('.bxslider').bxSlider({
+        adaptiveHeight:true,
+        auto:true,
+        autoHover:true,
+        mode:'fade',
+        pager:false,
+        speed:1000
+      });
+    })
+  </script>
+  <!--[if lte IE 8]>
+    <link rel="stylesheet" type="text/css" href="css/ie.css">
+    <script type="text/javascript" src="js/ie.js"></script>
+  <![endif]-->
+</head>
+<body>
+  <a class="collapsed navbar-toggle" data-target="#main-nav" data-toggle="collapse">Menu</a>
+  <div class="collapse navbar" id="main-nav">
+    <ul class="clearfix">
+      <li class="active"><a href="index.html">Home</a></li>
+      <li><a href="start.html">Getting Started</a></li>
+      <li><a href="typography.html">Typography</a></li>
+      <li><a href="news.html">News</a></li>
+    </ul><!-- /.clearfix -->
+  </div><!-- /.navbar #main-nav -->
+  <div class="hero">
+    <form action="search.html" class="navbar-search">
+      <div class="collapse" id="navbar-search">
+        <input type="search">
+        <button class="navbar-search-btn"></button>
+      </div><!-- /#navbar-search -->
+      <a class="collapsed navbar-search-toggle" data-target="#navbar-search" data-toggle="collapse"></a>
+    </form><!-- /.navbar-search -->
+    <div class="hero-content">
+      <h1>FarCry Core</h1>
+      <p class="lead">Build amazing web applications with FarCry</p>
+      <p><a class="btn btn-large" href="http://www.farcrycore.org/download" target="_blank">Download Now</a></p>
+    </div><!-- /.hero-content -->
+  </div><!-- /.hero -->
+  <div class="content">
+    <ul class="bxslider">
+      <li>
+        <img alt="" src="images/1.jpg">
+        <div class="bx-caption">
+          <p><a href="start.html">Getting Started</a></p>
+          <p>The FarCry Express demo is fully functional. It's only a sample application, but it should give you a feel for how FarCry works and is a great starting point for building your own tailor made CMS solutions.</p>
+        </div><!-- /.bx-caption -->
+      </li>
+      <li>
+        <img alt="" src="images/2.jpg">
+        <div class="bx-caption">
+          <p><a href="typography.html">Typography</a></p>
+          <p>This helpful little page features all the typography available with the Fandango theme for FarCry.</p>
+        </div><!-- /.bx-caption -->
+      </li>
+      <li>
+        <img alt="" src="images/3.jpg">
+        <div class="bx-caption">
+          <p><a href="news.html">News</a></p>
+        </div><!-- /.bx-caption -->
+      </li>
+    </ul><!-- /.bxslider -->
+    <div class="row">
+      <div class="span6">
+        <div class="article">
+          <h2 class="article-heading">FarCry Core</h2>
+          <div class="article-content">
+            <p>FarCry Core is a ColdFusion web application framework, ideally suited for building tailor made content management solutions. Supporting both Adobe ColdFusion and the popular open source CFML engine Railo, FarCry runs in virtually any environment these application servers can be installed.</p>
+            <p class="read-more"><a href="http://www.farcrycore.org/">Learn more...</a></p>
+          </div><!-- /.article-content -->
+        </div><!-- /.article -->
+      </div><!-- /.span6 -->
+      <div class="span6">
+        <div class="article">
+          <h2 class="article-heading">FarCry CMS</h2>
+          <div class="article-content">
+            <p>FarCry CMS is a content management plugin for the FarCry Core publishing platform. Providing "out-of-the-box" options for News, Events and other dynamic content types. FarCry CMS is part of the FarCry Community distribution.</p>
+            <p class="read-more"><a href="http://plugins.farcrycore.org/plugin/farcry-cms">Learn more...</a></p>
+          </div><!-- /.article-content -->
+        </div><!-- /.article -->
+      </div><!-- /.span6 -->
+    </div><!-- /.row -->
+    <div class="row">
+      <div class="span6">
+        <div class="article">
+          <h2 class="article-heading">Fandango Theme</h2>
+          <div class="article-content">
+            <p>Fandango is an HTML5 based theme, built on the 960.gs grid for the FarCry Core publishing platform. Fandango is the default installation theme for the upcoming FarCry 6.2 release (due out in Jan 2012), but can be used with earlier versions of FarCry with little or no modification.</p>
+            <p class="read-more"><a href="https://farcry.jira.com/wiki/display/FAN/Home">Learn more...</a></p>
+          </div><!-- /.article-content -->
+        </div><!-- /.article -->
+      </div><!-- /.span6 -->
+      <div class="span6">
+        <div class="article">
+          <h2 class="article-heading">FarCry Plugins</h2>
+          <div class="article-content">
+            <p>The FarCry publishing platform has a host of open source and commercial plugins available for use from Google Analytics (tracking stats) to Janrain Engage (social media logins). Given that its easy to produce simple plugins, the Plugin Directory concentrates on larger services and solutions for the greater community.</p>
+            <p class="read-more"><a href="http://plugins.farcrycore.org/">Learn more...</a></p>
+          </div><!-- /.article-content -->
+        </div><!-- /.article -->
+      </div><!-- /.span6 -->
+    </div><!-- /.row -->
+  </div><!-- /.content -->
+  <div class="hero">
+    <div class="hero-content">
+      <p><small>FarCry Core was lovingly crafted by the Daemonites and the FarCry Community.</small></p>
+      <p><small>Copyright Daemon 2003-2012. FarCry Core is dual licensed under the GPL and Commercial Licenses.</small></p>
+      <p><small>Powered by&nbsp;<a href="http://www.farcrycore.org/" target="_blank">FarCry Core</a></small></p>
+    </div><!-- /.hero-content -->
+  </div><!-- /.hero -->
+</body>
+</html>
