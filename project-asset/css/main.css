@@ -218,7 +218,6 @@ body {
 .section-inner {
   background-color:#ffffff;
   border:1px solid #cccccc\9;
-  margin:-1px\9;
   -webkit-border-radius:3px;
      -moz-border-radius:3px;
           border-radius:3px;
@@ -259,17 +258,17 @@ a.img-holder {
 a.img-holder:active,
 a.img-holder:focus,
 a.img-holder:hover {
-  border-color:#126d42\9 !important;
-  -webkit-box-shadow:0 0 30px #126d42;
-     -moz-box-shadow:0 0 30px #126d42;
-          box-shadow:0 0 30px #126d42;
+  filter:alpha(opacity=80);
+  -webkit-box-shadow:0 0 30px rgba(0,0,0,0.3);
+     -moz-box-shadow:0 0 30px rgba(0,0,0,0.3);
+          box-shadow:0 0 30px rgba(0,0,0,0.3);
 }
 /*** nav ***/
 .nav {
   float:right;
   list-style:none;
   margin:0;
-  padding:5px 0 0;
+  padding:5px 0;
 }
 .nav > li {
   float:left;
@@ -306,8 +305,8 @@ a.img-holder:hover {
 }
 /*** navbar ***/
 .navbar {
-  background-color:#ffffff;
   background-color:rgba(255,255,255,0.95);
+  background-color:#ffffff\9;
   border-bottom:1px solid #cccccc\9;
   padding:0;
   position:fixed;
@@ -355,6 +354,7 @@ a.img-holder:hover {
   margin-bottom:25px;
   padding:15px 31px 16px;
   position:relative;
+  *zoom:1;
 }
 .section > h2 > i {
   background-image:url(section-heading.png);
@@ -448,7 +448,7 @@ a.img-holder:hover {
 }
 .thumbnail:active img,
 .thumbnail:hover img {
-  border-color:#126d42\9 !important;
+  filter:alpha(opacity=80);
   -webkit-box-shadow:0 0 60px rgba(0,0,0,0.6);
      -moz-box-shadow:0 0 60px rgba(0,0,0,0.6);
           box-shadow:0 0 60px rgba(0,0,0,0.6);
