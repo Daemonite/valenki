@@ -452,9 +452,9 @@ a.img-holder:hover {
 .thumbnail:active img,
 .thumbnail:hover img {
   border-color:#126d42\9 !important;
-  -webkit-box-shadow:0 0 30px #126d42;
-     -moz-box-shadow:0 0 30px #126d42;
-          box-shadow:0 0 30px #126d42;
+  -webkit-box-shadow:0 0 60px rgba(0,0,0,0.6);
+     -moz-box-shadow:0 0 60px rgba(0,0,0,0.6);
+          box-shadow:0 0 60px rgba(0,0,0,0.6);
   -webkit-transition:all 0.3s;
      -moz-transition:all 0.3s;
           transition:all 0.3s;

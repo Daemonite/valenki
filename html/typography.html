@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>FarCry</title>
+  <link rel="shortcut icon" href="css/favicons/favicon.ico">
   <link rel="stylesheet" type="text/css" href="css/main.css">
   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
   <script type="text/javascript" src="js/bootstrap.js"></script>
@@ -25,7 +26,7 @@
   <div class="hero">
     <form action="search.html" class="navbar-search">
       <div class="collapse" id="navbar-search">
-        <input type="search">
+        <input title="Search" type="search">
         <button class="navbar-search-btn"></button>
       </div><!-- /#navbar-search -->
       <a class="collapsed navbar-search-toggle" data-target="#navbar-search" data-toggle="collapse"></a>
@@ -191,7 +192,7 @@
       <div class="article-content">
         <p>A default table <code>.table</code>:</p>
         <div class="doc-example">
-          <table class="table">
+          <table class="table" title="Default Table">
             <thead>
               <tr>
                 <th>1</th>
@@ -231,7 +232,7 @@
         <p><code>.table-striped</code> adds zebra-striping to any table row within the <code>&lt;tbody&gt;</code> via the <code>:nth-child</code> CSS selector (not available in IE7-8).</p>
         <p><code>.table-hover</code> enables a hover state on table rows within a <code>&lt;tbody&gt;</code>.</p>
         <div class="doc-example">
-          <table class="table table-hover table-striped">
+          <table class="table table-hover table-striped" title="Styled Table">
             <thead>
               <tr>
                 <th>1</th>
